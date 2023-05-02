@@ -10,31 +10,39 @@ import Main from './Components/Layout/Main.jsx';
 import Home from './Components/Home/Home.jsx';
 import Login from './Components/Login/Login.jsx';
 import Blogs from './Components/Blogs/Blogs.jsx';
+import SignUp from './Components/SignUp/SignUp.jsx';
+import AuthProvider from './Components/providers/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Main></Main>,
-    children:[
+    path: '/',
+    element: <Main></Main>,
+    children: [
       {
-        path:'/',
-        element:<Home></Home>,
+        path: '/',
+        element: <Home></Home>,
       },
       {
-        path:'/login',
-        element:<Login></Login>,
+        path: '/login',
+        element: <Login></Login>,
       },
       {
-        path:'/blog',
-        element:<Blogs></Blogs>,
+        path: '/blog',
+        element: <Blogs></Blogs>,
+      },
+      {
+        path: '/signup',
+        element: <SignUp></SignUp>,
       }
-      
+
     ]
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

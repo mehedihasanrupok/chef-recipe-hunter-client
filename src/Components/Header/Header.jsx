@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import image from '../../assets/pic/111.png'
+import { AuthContext } from '../providers/AuthProvider';
 
 const Header = () => {
+
+    const {user, logout} = useContext(AuthContext);
+
+    const handleLogOut = () =>{
+        logout()
+        .then(result =>{})
+        .catch(error => console.error(error))
+     }
+
     return (
         <nav className='navbar-container'>
             <div>
@@ -13,7 +23,9 @@ const Header = () => {
             <div className='link'>
                 <Link className='general'  to="/">Home</Link>
                 <Link className='general' to="/blog">Blog</Link>
-                <Link className='general' to="/login">Login</Link>
+                {!user && <Link className='general' to="/login">Login</Link>}
+                {!user && <Link className='general' to="/signup">SignUp</Link>}
+                {user && <span className='text-white'>Welcome {user.email}  <button onClick={handleLogOut}>Log Out</button></span>}
             </div>
         </nav>
     );
