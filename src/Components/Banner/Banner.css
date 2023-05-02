@@ -1,0 +1,44 @@
+.banner-container {
+    display: flex;
+}
+
+.motivation {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 100px;
+    margin-left: 25px;
+    color: #1A1919;
+}
+
+.special-word {
+    color: blue;
+}
+.img{
+    width: 100%;
+}
+
+.details {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+    margin-left: 25px;
+}
+
+.start-button {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    margin-left: 25px;
+    color: white;
+}
+
+@media only screen and (max-width:576px){
+    .banner-container {
+        flex-direction: column;
+    }
+
+}

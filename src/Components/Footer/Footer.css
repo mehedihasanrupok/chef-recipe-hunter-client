@@ -1,0 +1,89 @@
+.footer-container {
+    background: #1A1919;
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    width: 100%;
+}
+
+.footer-container-one {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* margin: 40px 30px; */
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.footer-container div {
+    justify-content: space-around;
+}
+
+/* .first {
+    margin-left: 5px;
+} */
+.second{
+      margin-left: 25px;
+}
+h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #adadbd;
+}
+
+p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: white;
+}
+
+a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+h3 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+}
+
+hr {
+    color: white;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+.last div{
+    text-align: left;
+}
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width:576px) {
+    .footer-container-one {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
