@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Login.css'
 import { AuthContext } from '../providers/AuthProvider';
 import { Button } from 'react-bootstrap';
+import { BsGoogle,BsGithub } from "react-icons/bs";
 
 const Login = () => {
 
@@ -74,8 +75,8 @@ const Login = () => {
             </form>
             <p className='little'><small >Don't have an account? <Link to='/signup' className='little'>Create New Account</Link> </small></p>
             <hr />
-            <button onClick={handleGoogle}>Log in With Google</button>
-            <button onClick={handleGithub}>Log in With Github</button>
+            <button onClick={handleGoogle} className='media'><BsGoogle className='image1'/> Log in With Google</button>
+            <button onClick={handleGithub} className='media'><BsGithub className='image1'></BsGithub>Log in With Github</button>
         </div>
     );
 };
