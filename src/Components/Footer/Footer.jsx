@@ -12,28 +12,28 @@ const Footer = () => {
                     {/* <img src="../../../public/Icons/Group 9969.png" alt="" /> */}
                 </div>
                 <div className='second'>
-                    <h3>Company</h3>
+                    <h3 className='my-h3'>Company</h3>
                     <a href="">About Us</a><br></br>
                     <a href="">Work</a><br></br>
                     <a href="">Latest Items</a><br></br>/
                     <a href="">Careers</a><br></br>
                 </div>
                 <div>
-                    <h3>Restaurants</h3>
+                    <h3 className='my-h3'>Restaurants</h3>
                     <a href="">Food Items</a><br></br>
                     <a href="">Platters</a><br></br>
                     <a href="">Pricing</a><br></br>
                     <a href="">Ingredients</a><br></br>
                 </div>
                 <div>
-                    <h3>Support</h3>
+                    <h3 className='my-h3'>Support</h3>
                     <a href="">Help Desk</a><br></br>
                     <a href="">Sales</a><br></br>
                     <a href="">Become A Partner</a><br></br>
                     <a href="">Order Food</a><br></br>
                 </div>
                 <div>
-                    <h3>Contact</h3>
+                    <h3 className='my-h3'>Contact</h3>
                     <p>0171582583</p>
                     <p>0171582583</p>
                 </div>

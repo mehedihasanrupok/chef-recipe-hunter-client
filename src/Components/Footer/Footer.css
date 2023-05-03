@@ -54,13 +54,13 @@ a {
 
 }
 
-h3 {
+.my-h3 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: goldenrod;
 
 }
 

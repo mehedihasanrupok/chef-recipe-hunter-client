@@ -1,0 +1,8 @@
+.chef-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 75px;
+}
+.title-bar{
+    margin-top: 75px;
+}

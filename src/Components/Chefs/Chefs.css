@@ -1,0 +1,19 @@
+.chef-details{
+    border: 2px solid orange;
+    margin: 20px 40px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+.chef-details img{
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+h3{
+    font: lighter;
+    color: black;
+}
+details{
+    margin-left: 15px;
+}

@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import './Chefs.css'
 
 const Chefs = ({chef}) => {
-    const {picture,chefName,yearOfExperience,noOfRecipes} = chef;
+    const {picture,chefName,yearOfExperience,noOfRecipes,likes} = chef;
     return (
-        <div>
-            <h2>{chefName}</h2>
-            <h2>{yearOfExperience}</h2>
-            <h2>{noOfRecipes}</h2>
+        <div className='chef-details'>
+            <div>
             <img src={picture} />
+            </div>
+            <div className='details'>
+            <h3>Name: {chefName}</h3>
+            <h3>Year of Experience: {yearOfExperience}</h3>
+            <h3>Total Recipes: {noOfRecipes}</h3>
+            <h3>Likes: {likes}</h3>
+            </div>
+            
         </div>
     );
 };
