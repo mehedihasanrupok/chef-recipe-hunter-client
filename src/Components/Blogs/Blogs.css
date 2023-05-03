@@ -1,8 +1,16 @@
 .card{
-    display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    row-gap: 50px;
 }
 .answer{
     color: brown;
+    margin-top: 20px;
+}
+.head{
+    margin-right: 0px;
+    padding: 0;
+}
+Card{
     margin-top: 20px;
 }

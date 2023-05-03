@@ -1,12 +1,14 @@
 import React from 'react';
-import { Button, Card, CardGroup } from 'react-bootstrap';
+import { Accordion, Button, Card, CardGroup } from 'react-bootstrap';
 import './Blogs.css'
+import CardHeader from 'react-bootstrap/esm/CardHeader';
 
 const Blogs = () => {
     return (
+        
         <CardGroup className='card'>
             <Card>
-                <Card.Header>Question 1</Card.Header>
+                <CardHeader className='head'>Question 1</CardHeader>
                 <Card.Body>
                     <Card.Title>Tell us the differences between uncontrolled and controlled components.</Card.Title>
                     <Card.Text className='answer'>Answer:
