@@ -27,13 +27,19 @@
     line-height: 30px;
     color: #757575;
     margin-left: 25px;
+    padding: 10px;
 }
 
 .start-button {
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 8px;
     margin-left: 25px;
+    padding: 10px;
     color: white;
+}
+.information{
+    margin-top: 50px;
+    padding-top:25px ;
 }
 
 @media only screen and (max-width:576px){
