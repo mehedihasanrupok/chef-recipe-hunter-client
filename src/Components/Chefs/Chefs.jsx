@@ -13,6 +13,7 @@ const Chefs = ({chef}) => {
             <h3>Year of Experience: {yearOfExperience}</h3>
             <h3>Total Recipes: {noOfRecipes}</h3>
             <h3>Likes: {likes}</h3>
+            <button className='view-recipe'> View Recipes </button>
             </div>
             
         </div>

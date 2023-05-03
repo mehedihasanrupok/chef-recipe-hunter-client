@@ -12,6 +12,7 @@ import Login from './Components/Login/Login.jsx';
 import Blogs from './Components/Blogs/Blogs.jsx';
 import SignUp from './Components/SignUp/SignUp.jsx';
 import AuthProvider from './Components/providers/AuthProvider.jsx';
+import Error from './Components/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>,
+      },
+      {
+        path:'/*',
+        element:<Error></Error>
       },
       {
         path: '/blog',
