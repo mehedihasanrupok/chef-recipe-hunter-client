@@ -4,6 +4,8 @@ import Chefs from '../Chefs/Chefs';
 import './Home.css'
 import img1 from '../../assets/pic/121.png'
 import img2 from '../../assets/pic/1211.png'
+import img3 from '../../assets/pic/ingre.jpg'
+import img4 from '../../assets/pic/halal.jpg'
 
 const Home = () => {
     const [chefs, setChefs] = useState([]);
@@ -47,6 +49,17 @@ And don't forget about our sides - each one has been carefully selected to compl
                 </div>
                 <div>
                     <img className='img-2' src={img2} alt="" />
+                </div>
+            </div>
+            <div className='title-bar'>
+                  <h1>Fully Fresh Ingredients and Halal</h1>
+            </div>
+            <div className='second'>
+                <div>
+                   <img src={img3} alt="" />
+                </div>
+                <div>
+                    <img src={img4} alt="" />
                 </div>
             </div>
         </div>
