@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import img1 from '../../assets/pic/Group 9969.png'
 
 const Footer = () => {
     return (
@@ -7,11 +8,11 @@ const Footer = () => {
             <div className='footer-container-one'>
                 <div className='first'>
                     <h2>Food Hunt</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa illo.
-                        Ipsum magni atque commodi placeat reprehenderit. Accusamus, est delectus.</p>
-                    {/* <img src="../../../public/Icons/Group 9969.png" alt="" /> */}
+                    <p>Discover a world of flavors and elevate your dining experience with our carefully crafted
+                         dishes made from fresh, locally-sourced ingredients that will tantalize your taste buds and leave you wanting more.</p>
+                    <img src={img1} alt="" />
                 </div>
-                <div className='second'>
+                <div >
                     <h3 className='my-h3'>Company</h3>
                     <a href="">About Us</a><br></br>
                     <a href="">Work</a><br></br>

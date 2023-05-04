@@ -10,6 +10,7 @@ const auth = getAuth(app);
 const AuthProvider = ({children}) => {
 
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     //google
     const provider = new GoogleAuthProvider();
@@ -36,6 +37,7 @@ const AuthProvider = ({children}) => {
         user,
         createUser,
         signIn,
+        loading,
         googleLog,
         githubLog,
         logout
@@ -44,6 +46,7 @@ const AuthProvider = ({children}) => {
     useEffect( ()=>{
         const unsubscribe = onAuthStateChanged(auth, currentUser =>{
             setUser(currentUser);
+            setLoading(false);
         });
         //stop observeing while unmounting
         return () =>{
