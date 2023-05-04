@@ -11,6 +11,7 @@ const Login = () => {
     const { signIn, googleLog, githubLog } = useContext(AuthContext); 
 
     const handleGoogle =()=>{
+        
         googleLog()
         .then(result => {
             const loggedUser = result.user;
@@ -73,7 +74,7 @@ const Login = () => {
                 </div>
                 <input className='btn-submit' type="submit" value="Login" />
             </form>
-            <p className='little'><small >Don't have an account? <Link to='/signup' className='little'>Create New Account</Link> </small></p>
+            <p className='little'><small>Don't have an account? <Link to='/signup' className='little'>Create New Account</Link> </small></p>
             <hr />
             <button onClick={handleGoogle} className='media'><BsGoogle className='image1'/> Log in With Google</button>
             <button onClick={handleGithub} className='media'><BsGithub className='image1'></BsGithub>Log in With Github</button>
