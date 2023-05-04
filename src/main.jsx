@@ -13,6 +13,7 @@ import Blogs from './Components/Blogs/Blogs.jsx';
 import SignUp from './Components/SignUp/SignUp.jsx';
 import AuthProvider from './Components/providers/AuthProvider.jsx';
 import Error from './Components/Error/Error.jsx';
+import ChefDetails from './Components/ChefDetails/ChefDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path:'/*',
         element:<Error></Error>
+      },
+      {
+        path:'/chefs/:id',
+        element:<ChefDetails></ChefDetails>,
+        loader: ({params}) => fetch(`https://chef-recipe-hnter-server-mehedihasanrupok.vercel.app/chefs/${params.id}`)
       },
       {
         path: '/blog',

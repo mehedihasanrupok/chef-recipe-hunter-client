@@ -62,3 +62,17 @@
     font-size: 1.5rem;
     color: blue;
 }
+
+@media only screen and (max-width:576px){
+    .chef-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .extra-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .second {
+        flex-direction: column;
+    }
+    
+
+}

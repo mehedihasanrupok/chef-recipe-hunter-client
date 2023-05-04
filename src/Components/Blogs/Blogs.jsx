@@ -1,7 +1,6 @@
 import React from 'react';
 import { Accordion, Button, Card, CardGroup } from 'react-bootstrap';
 import './Blogs.css'
-import CardHeader from 'react-bootstrap/esm/CardHeader';
 import ReactToPdf from "react-to-pdf";
 
 const ref = React.createRef();

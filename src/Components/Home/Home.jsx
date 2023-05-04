@@ -19,7 +19,7 @@ const Home = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/chefs')
+        fetch('https://chef-recipe-hnter-server-mehedihasanrupok.vercel.app/chefs')
             .then(res => res.json())
             .then(data => setChefs(data))
             .catch(error => console.log(error))
