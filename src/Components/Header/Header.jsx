@@ -18,14 +18,14 @@ const Header = () => {
         <nav className='navbar-container'>
             <div>
                 <img className='image' src={image} alt="" />
-                <h2 className='title-bar'>Food Hunter</h2>
+                <h2 className='title-bar1'>Food Hunter</h2>
             </div>
             <div className='link'>
                 <Link className='general'  to="/">Home</Link>
                 <Link className='general' to="/blog">Blog</Link>
                 {!user && <Link className='general' to="/login">Login</Link>}
                 {!user && <Link className='general' to="/signup">SignUp</Link>}
-                {user && <span className='text-white'>{user.email}<button onClick={handleLogOut}>Log Out</button></span>}
+                {user && <span className='text-white'><button className='logout' onClick={handleLogOut}>Log Out</button></span>}
                 {/* {user && <button className='photo'>{user.photoUrl}</button>} */}
                 {user && <img className='photo' src={user.photoURL} alt="" />}
             </div>

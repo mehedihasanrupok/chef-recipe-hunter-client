@@ -14,3 +14,13 @@
 Card{
     margin-top: 20px;
 }
+.download{
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 40%;
+    background-color: cadetblue;
+}
+.container{
+    margin: 20px 25px;
+}

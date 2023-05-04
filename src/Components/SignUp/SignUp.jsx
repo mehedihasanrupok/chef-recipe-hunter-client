@@ -36,21 +36,25 @@ const SignUp = () => {
             loggedUser.photoURL = image;
             console.log(loggedUser);
             setOk('User Account Successfully Open');
+            form.reset('');
+            updateUser(loggedUser, {
+                photoURL: "image",
+              })
         })
         .catch(error =>{
             console.log(error);
             setError(error.message);
         } )
 
-        // updateUser(user,{
-        //     photoURL : image          
-        // })
-        // .then(result =>{      
-        //     console.log(result)
-        // })
-        // .catch(error =>{
-        //     console.log(error);
-        // })
+        updateUser(user,{
+            photoURL : image ,         
+        })
+        .then(result =>{      
+            console.log(result)
+        })
+        .catch(error =>{
+            console.log(error);
+        })
     }
     return (
         <div>

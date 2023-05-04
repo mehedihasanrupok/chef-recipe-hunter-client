@@ -9,17 +9,20 @@
     top: 0; */
 }
 .image{
+    margin-top: 10px;
+    margin-left: 25px;
     height: 100px;
     width: 100px;
-    display: block;
+    margin-bottom: 0px;
 }
-.title-bar {
+.title-bar1 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 44px;
     color: #1A1919;
+    margin: 0px;
 }
 
 .link {
@@ -69,8 +72,16 @@ a{
     height: 50px;
     border-radius: 50%;
     background-color: white;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 10px;
 }
-
+.logout{
+    padding: 10px;
+    background-color: #9873FF;
+    border-radius: 5px;
+    margin: 10px;
+}
 
 @media only screen and (max-width:576px){
     .navbar-container{
