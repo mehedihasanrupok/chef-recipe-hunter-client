@@ -1,5 +1,8 @@
 .banner-container {
+    margin-top: 10px;
     display: flex;
+    background-image: url('../../assets/pic/food1.jpg');
+    background-size: cover;
 }
 
 .motivation {
@@ -36,6 +39,7 @@
     margin-left: 25px;
     padding: 10px;
     color: white;
+    margin-bottom: 20px;
 }
 .information{
     margin-top: 50px;

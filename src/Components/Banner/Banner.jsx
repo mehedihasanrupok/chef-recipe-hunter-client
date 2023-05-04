@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../assets/pic/P3OLGJ1 copy 1.png'
+import img from '../../assets/pic/food.png'
 import './Banner.css'
 
 
