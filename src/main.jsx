@@ -14,7 +14,9 @@ import SignUp from './Components/SignUp/SignUp.jsx';
 import Error from './Components/Error/Error.jsx';
 import ChefDetails from './Components/ChefDetails/ChefDetails.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
-import AuthProvider from './components/providers/AuthProvider.jsx';
+import AuthProvider from './providers/AuthProvider.jsx';
+// import AuthProvider from './components/providers/AuthProvider.jsx';
+// import AuthProvider from './Components/providers/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {

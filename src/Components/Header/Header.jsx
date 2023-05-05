@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import image from '../../assets/pic/111.png'
-import { AuthContext } from '../providers/AuthProvider';
+import { AuthContext } from '../../providers/AuthProvider';
+// import { AuthContext } from '../providers/AuthProvider';
+// import { AuthContext } from '../providers/AuthProvider';
 
 const Header = () => {
 

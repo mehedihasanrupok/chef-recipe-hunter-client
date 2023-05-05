@@ -6,8 +6,9 @@ import img1 from '../../assets/pic/121.png'
 import img2 from '../../assets/pic/1211.png'
 import img3 from '../../assets/pic/ingre.jpg'
 import img4 from '../../assets/pic/halal.jpg'
-import { AuthContext } from '../providers/AuthProvider';
+// import { AuthContext } from '../providers/AuthProvider';
 import { Button, Spinner } from 'react-bootstrap';
+import { AuthContext } from '../../providers/AuthProvider';
 // import Spinner from 'react-bootstrap/Spinner';
 // import Button from 'react-bootstrap/Button';
 

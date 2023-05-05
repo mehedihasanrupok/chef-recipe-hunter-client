@@ -1,10 +1,12 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
-// import { AuthContext } from '../providers/AuthProvider';
 import { Button } from 'react-bootstrap';
 import { BsGoogle,BsGithub } from "react-icons/bs";
-import { AuthContext } from '../providers/AuthProvider';
+import { AuthContext } from '../../providers/AuthProvider';
+// import { AuthContext } from '../providers/AuthProvider';
+// import { AuthContext } from '../providers/AuthProvider';
+
 
 
 
