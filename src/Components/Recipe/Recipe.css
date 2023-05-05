@@ -1,0 +1,13 @@
+.fw-semibold{
+    font-weight: lighter;
+    color: black;
+}
+.ingredient{
+    color: black;
+}
+.text-primary{
+    color: red;
+}
+.recipe-title{
+    font-weight: bolder;
+}

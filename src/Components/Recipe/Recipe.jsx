@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Button, Card, CardGroup, Col } from 'react-bootstrap';
 // import { Rating } from '@smastrom/react-rating';
 // import '@smastrom/react-rating/style.css';
-// import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 import { MdFavoriteBorder } from 'react-icons/md';
+import './Recipe.css';
 
 const Recipe = ({ recipe }) => {
     const [fold, setFold] = useState(true);
@@ -13,7 +14,7 @@ const Recipe = ({ recipe }) => {
 
     const handleClick = () => {
         setIsDisabled(true);
-        // toast.success('Marked as your favorite recipe');
+        toast.success('Marked as your favorite recipe');
     };
 
     return (
@@ -22,22 +23,22 @@ const Recipe = ({ recipe }) => {
                 <Card>
                     <Card.Img variant="top" src={strMealThumb} />
                     <Card.Body>
-                        <Card.Title>{strMeal}</Card.Title>
+                        <Card.Title><span className='recipe-title'>{strMeal}</span></Card.Title>
                         <Card.Text className='justify'>
-                            <span className='fw-semibold'>Ingredients: </span>{strIngredients.join(', ').substring(0, 60)}.....
+                            <span className='fw-semibold'>Ingredients: </span><span className='ingredient'>{strIngredients.join(', ').substring(0, 60)}.....</span>
                             <br />
                             <span className='fw-semibold'>Cooking method: </span> 
                             {
                                 fold ? (
                                     <>
-                                        <span>{cookingMethod.substring(0, 120)}..... </span>
+                                        <span className='ingredient'>{cookingMethod.substring(0, 120)}..... </span>
                                         <span className='cursor-pointer text-primary' onClick={() => setFold(!fold)}>
                                             Read More
                                         </span>
                                     </>
                                 ) : (
                                     <>
-                                        <span>{cookingMethod} </span>
+                                        <span className='ingredient'>{cookingMethod} </span>
                                         <span className='cursor-pointer text-primary' onClick={() => setFold(!fold)}>
                                             Read Less
                                         </span>

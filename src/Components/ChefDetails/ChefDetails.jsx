@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
 import Recipe from '../Recipe/Recipe';
-import { BiLike } from 'react-icons/bi';
+import { BsFillHandThumbsUpFill } from "react-icons/bs";
 import './ChefDetails.css';
 
 const ChefDetails = () => {
@@ -12,22 +12,22 @@ const ChefDetails = () => {
     return (
         <Container>
             <Card>
-                <Row>
-                    <Col md={4}>
+                <Row className='each_chef'>
+                    <Col md={4} lg={6}>
                         <Card.Img  src={picture} />
                     </Col>
-                    <Col md={8}>
-                        <Card.Body>
-                            <Card.Title>Name: {chefName}</Card.Title>
+                    <Col md={8} lg={6}>
+                        <Card.Body className='my-body'>
+                            <Card.Title className='details-chef'>Name: <h4 className='text-para'>{chefName}</h4></Card.Title>
                             <Card.Text>
-                                <span className='details-chef'>Description:</span> <p className='text-para'>Experienced, passionate, and creative chef who worked at your restaurant for many years, with exceptional cooking skills, leadership qualities, and a signature style of cooking.</p>
+                                <span className='details-chef'>Description:</span> <h4 className='text-para'>Experienced, passionate, and creative chef who worked at your restaurant for many years, with exceptional cooking skills, leadership qualities, and a signature style of cooking.</h4>
                                 <br />
-                                <span className='details-chef'>Year of Experience:</span> <p className='text-para'>{yearOfExperience}</p>
+                                <span className='details-chef'>Year of Experience:</span> <h4 className='text-para'>{yearOfExperience}</h4>
                                 <br />
-                                <span className='details-chef'>No of recipes:</span> <p className='text-para'>{noOfRecipes}</p>
+                                <span className='details-chef'>No of recipes:</span> <h4 className='text-para'>{noOfRecipes}</h4>
                                 <br />
-                                <span className='d-flex align-items-center'>
-                                    <BiLike /> <span className='ms-2'>{likes}</span>
+                                <span className='details-chef'>
+                                    <BsFillHandThumbsUpFill></BsFillHandThumbsUpFill> <span className='text-para'>{likes}</span>
                                 </span>
                             </Card.Text>
                         </Card.Body>

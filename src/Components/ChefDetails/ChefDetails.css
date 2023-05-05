@@ -1,6 +1,21 @@
 .details-chef{
     color: black;
+    font-weight: bold;
 }
 .text-para{
-    color: blueviolet;
+    color: black;
+}
+h4{
+    display: inline;
+}
+.each_chef{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    gap: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.my-body{
+    margin-top: 25px;
 }
