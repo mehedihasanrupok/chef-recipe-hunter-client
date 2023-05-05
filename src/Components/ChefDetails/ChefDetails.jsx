@@ -11,7 +11,7 @@ const ChefDetails = () => {
 
     return (
         <Container>
-            <Card>
+            <Card className='head-of'>
                 <Row className='each_chef'>
                     <Col md={4} lg={6}>
                         <Card.Img  src={picture} />
@@ -35,8 +35,8 @@ const ChefDetails = () => {
                 </Row>
             </Card>
             
-            <section>
-                <h3 className='text-center fw-semibold my-4'>Recipes</h3>
+            <section className='food-item'>
+                <h3 className='text-center semibold my-4'>Recipes</h3>
                 <Row xs={1} md={2} lg={3} className="g-4">
                     {
                         recipes.map(recipe => <Recipe key={recipe.idMeal} recipe={recipe} />)

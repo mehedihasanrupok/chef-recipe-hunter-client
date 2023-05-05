@@ -1,5 +1,5 @@
 .fw-semibold{
-    font-weight: lighter;
+    font-weight: bolder;
     color: black;
 }
 .ingredient{
@@ -10,4 +10,16 @@
 }
 .recipe-title{
     font-weight: bolder;
+}
+.each-card{
+    margin: 25px;
+    display: flex;
+}
+.card-display{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.d-flex{
+    display: flex;
+    gap: 20px;
 }

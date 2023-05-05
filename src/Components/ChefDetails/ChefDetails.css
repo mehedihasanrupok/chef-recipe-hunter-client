@@ -19,3 +19,27 @@ h4{
 .my-body{
     margin-top: 25px;
 }
+.text-center{
+    text-align: center;
+}
+.semibold{
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+.food-item{
+    margin: 20px;
+    margin-top: 30px;
+}
+.head-of{
+    margin: 50px;
+}
+
+@media only screen and (max-width:576px){
+    
+    .each_chef{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
